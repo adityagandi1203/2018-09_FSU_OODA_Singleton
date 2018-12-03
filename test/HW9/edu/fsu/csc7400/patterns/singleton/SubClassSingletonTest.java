@@ -13,16 +13,20 @@ import org.junit.jupiter.api.Test;
 class SubClassSingletonTest {
 	
 	private SubClassSingleton singleton;
+/*
+ * typecasted the subclass for the instance creation
+ * */
 
 	@BeforeEach
 	void setUp() throws Exception {
-		singleton = SubClassSingleton.getInstance();
+		singleton = (SubClassSingleton)SubClassSingleton.getInstance();
 	}
-
+	/*checked the instance creation
+	*/
 	@Test
 	void testGetInstance() {
 		assertEquals(
-				0,
+				1,
 				SubClassSingleton.getInstance().getSomeState());
 	}
 
