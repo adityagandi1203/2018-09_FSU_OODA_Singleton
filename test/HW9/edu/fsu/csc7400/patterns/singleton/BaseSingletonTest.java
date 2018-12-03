@@ -18,11 +18,13 @@ class BaseSingletonTest {
 	void setUp() throws Exception {
 		singleton = BaseSingleton.getInstance();
 	}
-
+/*
+ * test condition updated
+ */
 	@Test
 	void testGetInstance() {
 		assertEquals(
-				0,
+				1,
 				BaseSingleton.getInstance().getSomeState());
 	}
 
