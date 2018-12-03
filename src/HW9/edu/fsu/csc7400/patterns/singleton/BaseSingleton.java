@@ -2,7 +2,7 @@
  * Class: Object-Oriented Design and Analysis
  * Professor: Orlando Montalvo
  * Assignment: HW 9 - Singleton Problems
- * 
+ * Student:Aditya (@01392300)
  * Date: 2017-11-11
  */
 package HW9.edu.fsu.csc7400.patterns.singleton;
@@ -59,7 +59,9 @@ public class BaseSingleton {
 	
 	/**
 	 * Private constructor for singleton
+	 * changes this constructor  to protected because the visibity of a base constructor in the child constructor
+	 * extension would not be possible
 	 */
-	private BaseSingleton() {
+	protected BaseSingleton() {
 	}
 }
